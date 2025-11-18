@@ -1,0 +1,62 @@
+$primary-color: #3498db;
+$text-color: #333;
+$spacing: 16px;
+
+.header {
+  background: $primary-color;
+  padding: $spacing;
+  color: white;
+
+  &__title {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  &__nav {
+    margin-top: 10px;
+
+    &-link {
+      color: white;
+      margin-right: 10px;
+      text-decoration: none;
+
+      &--active {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.card {
+  margin: $spacing;
+  padding: $spacing;
+  border: 2px solid $primary-color;
+  border-radius: 6px;
+
+  &__title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: $text-color;
+    margin-bottom: 15px;
+  }
+
+  &__btn {
+    padding: 8px 12px;
+    background: $primary-color;
+    color: white;
+    border: none;
+    border-radius: 4px;
+
+    &:hover {
+      background: darken($primary-color, 10%);
+    }
+  }
+}
